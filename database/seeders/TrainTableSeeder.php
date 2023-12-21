@@ -4,8 +4,9 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Faker\Generator as Faker;
 use App\Models\Train;
+use Faker\Generator as Faker;
+
 
 class TrainTableSeeder extends Seeder
 {
@@ -18,6 +19,7 @@ class TrainTableSeeder extends Seeder
     {
         for ($i = 0; $i < 10; $i++) {
             $newTrain = new Train();
+
             $newTrain->company = $faker->company();
             $newTrain->departure_station = $faker->city();
             $newTrain->arrival_station = $faker->city();
@@ -27,6 +29,7 @@ class TrainTableSeeder extends Seeder
             $newTrain->number_carriages = $faker->numberBetween(1, 9);
             $newTrain->in_time = $faker->randomElement([true, false]);
             $newTrain->deleted = $faker->randomElement([true, false]);
+
             $newTrain->save();
 
         }
