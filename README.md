@@ -1,3 +1,29 @@
+## Esercizio di oggi: LARAVEL-MIGRATION-SEEDER
+
+## nome repo: laravel-migration-seeder
+
+Creaiamo un database da phpmyadmin (es. train_db)
+Creiamo una tabella trains e relativa Migration
+Ogni treno dovrà avere:
+- Azienda
+- Stazione di partenza
+- Stazione di arrivo
+- Orario di partenza
+- Orario di arrivo
+- Codice Treno
+- Numero Carrozze
+- In orario
+- Cancellato
+
+È probabile che siano necessarie altre colonne per far funzionare la tabella nel modo corretto :occhiolino:
+Create il Model Train e
+Aggiungete un seeder per la classe Train usando FakerPHP.
+Create  relativo ed un Controller per mostrare nella home page tutti i treni che sono in partenza dalla data odierna.
+
+## Bonus:
+Create  relativo Controller e rotta per mostrare tutti i treni che sono in partenza dalla data odierna.
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
